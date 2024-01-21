@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{
+            color: blueviolet;
+        }
+        #header{
+            color:green;
+        }
+        #fruits{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">My First Dom</h1>
+    </header>
+    <main>
+       <section id="places-container">
+        <h1>My awesome dom de Baba</h1>
+        <ul>
+            <li>About</li>
+            <li>Home</li>
+            <li>Learn</li>
+        </ul>
+       </section>
+    <section>
+        <h1 id="fruits">My Fruits</h1>
+        <ul>
+            <li>apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ul>
+    </section>
+    </main>
+    <script>
+        const places = document.getElementById('fruits');
+        places.innerText = 'My first Website';
+    </script>
+
+
+
+    <script src="js/dom.js"></script>
+</body>
+</html>
